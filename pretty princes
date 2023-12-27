@@ -8,19 +8,23 @@ local aTab = Window:MakeTab({
 })
 
 aTab:AddButton({
-	Name = "gui",
+	Name = "GGH52Lan's gui",
+Callback = function()
 loadstring(game:HttpGet('https://pastebin.com/raw/LAneEiHV'))()
 end    
 })
 
 aTab:AddButton({
 	Name = "soundspam",
-loadstring(game:HttpGet('https://raw.githubusercontent.com/cxolol/princess-tycoon-sound-spam/main/sound%20spammer'))()
+Callback = function()
 OrionLib:MakeNotification({
 Name = "loaded",
 Content = ".troll = on .stroll = off ",
 Image = "rbxassetid://4483345998",
 Time = 5
+})
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/cxolol/princess-tycoon-sound-spam/main/sound%20spammer'))()
 end    
 })
 
@@ -32,12 +36,14 @@ local bTab = Window:MakeTab({
 
 bTab:AddButton({
 	Name = "iy",
+Callback = function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
   	end    
 })
 
 bTab:AddButton({
 	Name = "iv admin",
+Callback = function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/BloodyBurns/Hex/main/Iv%20Admin%20v3.lua'))()
 end    
 })
