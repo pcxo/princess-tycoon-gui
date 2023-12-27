@@ -1,0 +1,86 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "princess tycoon (cxo is a pretty princess)", HidePremium = false, IntroEnabled, IntroText = "cxoh em gee", SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local aTab = Window:MakeTab({
+	Name = "princess tycoon",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+aTab:AddButton({
+	Name = "gui",
+loadstring(game:HttpGet('https://pastebin.com/raw/LAneEiHV'))()
+end    
+})
+
+aTab:AddButton({
+	Name = "soundspam",
+loadstring(game:HttpGet('https://raw.githubusercontent.com/cxolol/princess-tycoon-sound-spam/main/sound%20spammer'))()
+OrionLib:MakeNotification({
+Name = "loaded",
+Content = ".troll = on .stroll = off ",
+Image = "rbxassetid://4483345998",
+Time = 5
+end    
+})
+
+local bTab = Window:MakeTab({
+	Name = "other",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+bTab:AddButton({
+	Name = "iy",
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+  	end    
+})
+
+bTab:AddButton({
+	Name = "iv admin",
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/BloodyBurns/Hex/main/Iv%20Admin%20v3.lua'))()
+end    
+})
+
+local cTab = Window:MakeTab({
+	Name = "useful",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+cTab:AddSlider ({
+	Name = "WALK SPEED",
+	Min = 16,
+	Max = 250,
+	Default = 16,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "WS",
+	Callback = function(Value)
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+                
+	end    
+})
+
+cTab:AddSlider ({
+	Name = "JUMP POWER",
+	Min = 50,
+	Max = 250,
+	Default = 16,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "JP",
+	Callback = function(Value)
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+		
+	end    
+})
+ 
+cTab:AddButton({
+Name = "REJOIN",
+Callback = function()
+game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
+end
+})
+
+OrionLib:Init()
