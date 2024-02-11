@@ -1,3 +1,5 @@
+if game.PlaceId ~= 3804735158 then return end -- remove if you wanna use in any game
+
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "princess tycoon (cxo is a pretty princess)", HidePremium = false, IntroEnabled, IntroText = "cxoh em gee", SaveConfig = true, ConfigFolder = "OrionTest"})
 
